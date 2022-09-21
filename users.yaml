@@ -1,0 +1,7 @@
+USERS:
+    - uids:                     # uid1,uid2
+      mysqlip: 'localhost'      # mysql ip
+      mysqlport: 3306           # mysql port
+      mysqluser: 'root'         # mysql username
+      mysqlpassword: '123456'   # mysql password
+
