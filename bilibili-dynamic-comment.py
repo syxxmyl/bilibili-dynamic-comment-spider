@@ -161,6 +161,10 @@ async def writeDynamicComment(uid=0, dynamicOid=0, dynamicRid=0, dynamicType=0, 
 
         # print(dynamicInfo)
 
+        if not dynamicInfo['replies']:
+            commentLog.info(f"load {dynamicOid} finished, count={count}")
+            break
+
         if not has_load_upper:
             if dynamicInfo.get('upper'):
                 if dynamicInfo['upper'].get('top'):
